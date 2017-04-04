@@ -16,7 +16,7 @@ import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.common.LifecycleState;
 import com.facebook.react.shell.MainReactPackage;
 
-public class MainActivity extends BaseReactActivity  implements MessageFromReactToAndroidModule.ReactEmmiter {
+public class HybridActivity extends BaseReactActivity  implements MessageFromReactToAndroidModule.ReactEmmiter {
 
   private ReactRootView mReactRootView;
 

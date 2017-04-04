@@ -9,7 +9,7 @@ export default class CallbackUI extends React.Component {
         <View style={styles.mainContainer}>
           <Text>CallbackUI</Text> 
           <Button
-            title = "Pass a callback to Android"
+            title = "Pass a callback to Android 6"
             onPress = {()=> { Callback.waitOnAndroidAndCallback(2000, (msg) => {ToastAndroid.show(msg, ToastAndroid.SHORT);} ); }}
             accessibilityLabel="This calls android using native modules and android triggers a callback.">
           </Button>

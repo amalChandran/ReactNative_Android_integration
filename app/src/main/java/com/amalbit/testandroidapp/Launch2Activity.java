@@ -14,6 +14,7 @@ public class Launch2Activity extends AppCompatActivity implements View.OnClickLi
 
     ((Button)findViewById(R.id.btn_partial_screen)).setOnClickListener(this);
     ((Button)findViewById(R.id.btn_callbacks)).setOnClickListener(this);
+    ((Button)findViewById(R.id.btn_module_view)).setOnClickListener(this);
   }
 
   @Override public void onClick(View view) {
@@ -23,10 +24,13 @@ public class Launch2Activity extends AppCompatActivity implements View.OnClickLi
          startActivity(intent1);
          break;
        case R.id.btn_partial_screen:
-         Intent intent = new Intent(Launch2Activity.this, MainActivity.class);
+         Intent intent = new Intent(Launch2Activity.this, HybridActivity.class);
          startActivity(intent);
          break;
-
+       case R.id.btn_module_view:
+         Intent intent2 = new Intent(Launch2Activity.this, ViewModuleActivity.class);
+         startActivity(intent2);
+         break;
      }
   }
 }
